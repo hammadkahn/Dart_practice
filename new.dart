@@ -22,6 +22,11 @@ void main() {
     },
     {"taskName": "Do Assignment 1", "isCompleted": true, "submissionDate": 5}
   ];
-  //Create a list that contains tasks with submission dates between 10 to 20
-  
+  for (var i = 0; i < Task.length; i++) {
+    var a = (Task[i]["isCompleted"]);
+    if (a == true) {
+      Task[i]["taskName"] = "Completed";
+    }
+  }
+  print(Task);
 }
