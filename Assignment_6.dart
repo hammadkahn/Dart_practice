@@ -1,8 +1,6 @@
 import 'dart:io';
 
-void mian() {
-  contact contact = new contact();
-}
+void mian() {}
 
 class contact {
   void a() {
