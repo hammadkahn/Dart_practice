@@ -1,6 +1,10 @@
 void main() {
   Iphone12 apple = Iphone12("512gb", "Iphone12 pro max", 11, 250000);
   print(apple.Space);
+  print(apple.name);
+  print(apple.price);
+  print(apple.stockQuantity);
+
 }
 
 abstract class Product {
