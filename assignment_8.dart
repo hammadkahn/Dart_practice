@@ -1,10 +1,19 @@
 void main() {
-  Iphone12 apple = Iphone12("512gb", "Iphone12 pro max", 11, 250000);
-  print(apple.Space);
-  print(apple.name);
-  print(apple.price);
-  print(apple.stockQuantity);
-
+  List<Product> products = [
+    Iphone12("128gb", "iphone 12", 250000, 11),
+    Iphone12("256gb", "iphone 12 pro", 350000, 12)
+  ];
+  //print list
+  // for (var i = 0; i < products.length; i++) {
+  //   print(products[i].name);
+  //   print(products[i].price);
+  //   print(products[i].stockQuantity);
+  
+  // Main Menu
+  int i = 0;
+  for (var product in products) {
+    print("Press ${++i} to select ${product.name} ");
+  }
 }
 
 abstract class Product {
